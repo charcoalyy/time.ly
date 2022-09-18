@@ -1,19 +1,16 @@
--- rewrite frontend for scheduled
--- reformat json file
--- how to send data from react to flask
+-- how to send data from react TO flask
+-- connect to singular repo
+-- send in devpost
 
 
-- connect to singular repo
-- favicon & endpage design
 
-- send in demo and devpost
+
+
 
 8AM
 - practice pitch & potential conflict questions
     - multiple transfer buses - how to let people do that while preventing over-booking?
     - what will you do about people who don't show up?
-
-
 
 future
 - API for texting/email notif

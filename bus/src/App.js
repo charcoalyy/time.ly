@@ -1,10 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Selection from './Selection';
-import Available from './Available';
-import Booked from './Booked';
-import { useState, useEffect } from 'react';
-import Schedule from './Schedule';
-import Payment from './Payment';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Emby from './animationnn';
 
 function App() {

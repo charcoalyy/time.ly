@@ -67,6 +67,9 @@ h3 {
   margin-bottom: 1rem;
 }
 
+select:invalid {
+  color: var(--mid-grey);
+}
 
 
 
@@ -100,7 +103,7 @@ h3 {
 
 #date-picker {
   padding-left: 0.5rem;
-  width: 85%;
+  width: 87%;
   font-family: 'Avenir';
 }
 
@@ -146,6 +149,10 @@ h3 {
 .listed-wait {
   color: var(--mid-grey);
   padding-left: 0.25rem;
+}
+
+.schedule-filters {
+  margin-bottom: 0.5rem;
 }
 
 .reserve-button {
@@ -252,4 +259,8 @@ h3 {
   top: 50%;
   transform: translate(-50%, -50%);
   margin-top: -4rem;
+}
+
+#bus-illustration {
+  max-width: 50%;
 }

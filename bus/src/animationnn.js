@@ -4,7 +4,7 @@ import Available from './Available';
 import Booked from './Booked';
 import { useState } from 'react';
 import Schedule from './Schedule';
-import Payment from './Payment';
+import End from './End';
 import { AnimatePresence } from 'framer-motion';
 
 const Emby = () => {
@@ -15,18 +15,19 @@ const Emby = () => {
     const[busID, setBusID] = useState(null);
     const[time, setTime] = useState(null);
     const[data, setData] = useState([{}]);
+    const[arrival, setArrival] = useState(null);
 
     const location = useLocation();
 
     return(
             <AnimatePresence
-            exitBeforeEnter={true}>
+            mode='wait'>
                 <Routes location={location} key={location.pathname}>
-                    <Route exact path="/" element={<Selection start={start} setStart={setStart} destination={destination} setDestination={setDestination} date={date} setDate={setDate}/>}/>
+                    <Route exact path="/" element={<Selection start={start} setStart={setStart} destination={destination} setDestination={setDestination} date={date} setDate={setDate} arrival={arrival} setArrival={setArrival}/>}/>
                     <Route path="available" element={<Available setBusID={setBusID} destination={destination} setDestination={setDestination} setBus={setBus}/>}/>
                     <Route path="schedule" element={<Schedule bus={bus} time={time} setTime={setTime}/>}/>
-                    <Route path="booked" element={<Booked setBus={setBus} bus={bus} time={time} setTime={setTime} destination={destination}/>}/>
-                    <Route path="payment" element={<Payment />} />
+                    <Route path="booked" element={<Booked setBus={setBus} bus={bus} time={time} setTime={setTime} destination={destination} setDate={setDate}/>}/>
+                    <Route path="payment" element={<End setDate={setDate} />} />
                 </Routes>
             </AnimatePresence>
     )
