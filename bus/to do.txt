@@ -1,3 +1,0 @@
--- send data from react TO flask
--- test json file writing
--- send in devpost (6:00)
