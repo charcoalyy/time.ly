@@ -11,12 +11,14 @@ const Schedule = ({bus, setTime}) => {
     const[buses, setBuses] = useState([]);
 
     useEffect(() => {
-      fetch("/buses").then(
+      fetch("http://localhost:5000/buses").then(
         res => res.json()
       ).then(
         data => {
           setBuses(data.buses[i])
         }
+      ).catch(
+        err => console.log(err)
       )
     }, [])
 

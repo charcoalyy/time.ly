@@ -4,7 +4,7 @@ import { availableBuses } from "./Data";
 import { MdOutlineArrowForwardIos } from "react-icons/md"
 import { motion } from 'framer-motion';
 
-const Available = ({destination, setBus, setBusID}) => {
+const Available = ({destination, setBus}) => {
     const handleClick = (number) => {
         setBus(number)
     }

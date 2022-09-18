@@ -1,16 +1,3 @@
--- how to send data from react TO flask
--- connect to singular repo
--- send in devpost
-
-
-
-
-
-
-8AM
-- practice pitch & potential conflict questions
-    - multiple transfer buses - how to let people do that while preventing over-booking?
-    - what will you do about people who don't show up?
-
-future
-- API for texting/email notif
+-- send data from react TO flask
+-- test json file writing
+-- send in devpost (6:00)

@@ -29,6 +29,13 @@ h3 {
   padding-bottom: 1rem;
 }
 
+.border {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--dark-green)
+}
+
 .action-button {
   all: unset;
   text-decoration: none;
@@ -45,6 +52,7 @@ h3 {
 #cancel {
   background-color: var(--light-grey);
   color: var(--dark-grey);
+  margin-bottom: 2rem;
 }
 
 .wrapper-button {
@@ -84,12 +92,14 @@ select:invalid {
   align-items: stretch;
 }
 
-.selection > * {
-  margin-bottom: 0.5rem;
+.selection form {
+  display: flex;
+  flex-direction: column;
 }
 
 .selection-item {
   padding: 0.75rem 2rem 0.75rem 0.25rem;
+  margin-bottom: 0.5rem;
   border: none;
   background-color: var(--offwhite);
   transition: all 0.3s;
@@ -108,8 +118,9 @@ select:invalid {
 }
 
 .error {
-  color: red;
+  color: rgb(203, 47, 47);
   font-size: 14px;
+  margin-top: 0.5rem;
 }
 
 
@@ -228,7 +239,7 @@ select:invalid {
 }
 
 .notify-option {
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem 0.4rem;
   border: none;
   background-color: var(--offwhite);
   transition: all 0.3s;
@@ -263,4 +274,5 @@ select:invalid {
 
 #bus-illustration {
   max-width: 50%;
+  margin-bottom: 0.75rem;
 }

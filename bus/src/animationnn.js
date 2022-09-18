@@ -12,9 +12,7 @@ const Emby = () => {
     const[destination, setDestination] = useState(null);
     const[date, setDate] = useState(null);
     const[bus, setBus] = useState(null);
-    const[busID, setBusID] = useState(null);
     const[time, setTime] = useState(null);
-    const[data, setData] = useState([{}]);
     const[arrival, setArrival] = useState(null);
 
     const location = useLocation();
@@ -24,7 +22,7 @@ const Emby = () => {
             mode='wait'>
                 <Routes location={location} key={location.pathname}>
                     <Route exact path="/" element={<Selection start={start} setStart={setStart} destination={destination} setDestination={setDestination} date={date} setDate={setDate} arrival={arrival} setArrival={setArrival}/>}/>
-                    <Route path="available" element={<Available setBusID={setBusID} destination={destination} setDestination={setDestination} setBus={setBus}/>}/>
+                    <Route path="available" element={<Available destination={destination} setDestination={setDestination} setBus={setBus}/>}/>
                     <Route path="schedule" element={<Schedule bus={bus} time={time} setTime={setTime}/>}/>
                     <Route path="booked" element={<Booked setBus={setBus} bus={bus} time={time} setTime={setTime} destination={destination} setDate={setDate}/>}/>
                     <Route path="payment" element={<End setDate={setDate} />} />
