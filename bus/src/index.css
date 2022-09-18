@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  --dark-green: rgb(0, 186, 108);
+  --dark-grey: rgb(32, 36, 38);
+  --mid-grey: rgb(117, 117, 117);
+  --light-grey: rgb(224, 224, 224);
+  --offwhite: rgb(244,244,244);
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 2rem;
+  font-family: 'Avenir';
+}
+
+h1 {
+  font-size: 34px;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: var(--mid-grey);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: -0.5rem;
+  padding-bottom: 1rem;
+}
+
+.action-button {
+  all: unset;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: white;
+  background-color: var(--dark-green);
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+#cancel {
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+}
+
+.wrapper-button {
+  all: unset;
+}
+
+.action-button:hover, .action-button:active {
+  background-color: var(--dark-grey);
+}
+
+.back-button {
+  all: unset;
+  cursor: pointer;
+  color: var(--light-grey);
+  padding-bottom: 1rem;
+}
+
+#hi {
+  color: var(--light-grey);
+  margin-bottom: 1rem;
+}
+
+
+
+
+.content-container {
+  min-width: 100%;
+  display: block;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.selection > * {
+  margin-bottom: 0.5rem;
+}
+
+.selection-item {
+  padding: 0.75rem 2rem 0.75rem 0.25rem;
+  border: none;
+  background-color: var(--offwhite);
+  transition: all 0.3s;
+  font-family: 'Avenir';
+}
+
+.selection-item:focus {
+  outline: none;
+  background-color: var(--light-grey);
+}
+
+#date-picker {
+  padding-left: 0.5rem;
+  width: 85%;
+  font-family: 'Avenir';
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+
+
+
+
+.bus-option {
+  text-decoration: none;
+  padding: 0.75rem 0rem 0.75rem 0rem;
+  border-bottom: 1px solid var(--dark-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bus-list {
+  cursor: pointer;
+}
+
+.bus-list > * {
+  text-decoration: none;
+  color: var(--dark-grey);
+  transition: all 0.3s;
+}
+
+.bus-list:hover > * {
+  color: var(--mid-grey);
+}
+
+
+
+
+.listed-option {
+  display: flex;
+}
+
+.listed-wait {
+  color: var(--mid-grey);
+  padding-left: 0.25rem;
+}
+
+.reserve-button {
+  all: unset;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: var(--dark-grey);
+  background-color: var(--light-grey);
+  width: fit-content !important;
+  font-size: 14px;
+  transition: all 0.3s;
+  border-radius: 17.5px;
+}
+
+.reserve-button:hover, .active {
+  background-color: var(--dark-green);
+}
+
+#optimal {
+  margin-right: 0.5rem;
+}
+
+
+
+
+.booked h5 {
+  text-transform: uppercase;
+}
+
+.booked-section {
+  border-bottom: 1px solid var(--dark-grey);
+  margin-bottom: 1rem;
+  padding: 0.5rem 0rem;
+}
+
+#booked-section-notify {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.booked td {
+  padding: 0.15rem 0rem;
+}
+
+.table-label {
+  color: var(--mid-grey);
+}
+
+.booked {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#payment-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#payment-section label {
+  padding-left: 0.5rem;
+}
+
+.payment-option {
+  padding: 0.15rem 0;
+}
+
+.icon {
+  margin-bottom: -0.15rem;
+  margin-left: 0.15rem;
+}
+
+.notify-option {
+  padding: 0.5rem 0.25rem;
+  border: none;
+  background-color: var(--offwhite);
+  transition: all 0.3s;
+  font-family: 'Avenir';
+  margin: 0.15rem 0rem;
+}
+
+.notify-option:focus {
+  outline: none;
+}
+
+#credit-card-number {
+  margin-left: 1.25rem;
+  width: 100%;
+}
+
+#credit-card-number-input {
+  display: flex;
+}
+
+
+
+
+#transaction-end {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -4rem;
+}
