@@ -1,6 +1,5 @@
 # time.ly
-Leaving lines in the dust
-Created at Hack the North 2022 
+Leaving lines in the dust | Created at Hack the North 2022 
 
 ## Inspiration
 With the lack of accessible student housing in recent years, demand for public transportation has skyrocketed—including GO Transit buses that depart from McMaster University and head towards destinations in Mississauga and Brampton. Students wait in line for hours on end as buses fill up before they can board, entailing the dreaded wait for the next bus. And so, we were inspired to address this problem with time.ly, a web application that allows passengers to reserve their seats ahead of time, avoid physically standing in long lines, and ultimately encourage use of public transportation by improving its experience.
